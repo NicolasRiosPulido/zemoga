@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instructions
 
-## Available Scripts
+para correr la app se devén descargar los archivos node y los archivos de react incluir los node-modules en ambos proyectos y correr los siguientes comandos:
 
-In the project directory, you can run:
+React: npm run start
+node: node index
 
-### `npm start`
+## details front
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+la sección del papa ocupa la pantalla inicial utilizando el 100 del view port heigh, la siguente sección utiliza un hook para ocultare cuando se presiona la x. 
+la sección de los votos utiliza un display grid el cual se puede cambiar para el responsive
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## how i could complete the chalenge
 
-### `npm test`
+Para el responsive utilizaria react-responsive para ocultar algunos componentes y CSS media queries para cambiar la dispocicion de la grilla, adicional mente utilizaría redux para hacer las votaciones y almacenar el JWT de la autenticacion.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+para hacer los links a otras paginas, crearia los componentes e incluiria estas nuevas rutas en el BrowserRouter.
 
-### `npm run build`
+para la seccion de votos utilizaria un operador ternario que dependa de un stado boolean, asi podría alternar entre "vote again" y "vote now". después de esto enviaría los votos al api REST del back y confirmaría con el token cuantos votos ha realizado, si la respuesta es que supero los 3 votos devolvería un error y este lo capturaría seteando una variable en mi rudex state.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+para manejar los porcentajes utilizaría un reducer el cual conectaría al componente cambiaría el width de los divs adicional-mete cambiaría los textos de la misma manera.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## how i could complete the chalenge
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para el responsive utilizaria react-responsive para ocultar algunos componentes y CSS media queries para cambiar la disposición de la grilla, adicionalmente utilizaria redux para hacer las votaciones y almacenar el JWT de la autenticacion.
 
-### `npm run eject`
+para hacer los links a otras paginas, crearia los componentes e incluiria estas nuevas rutas en el BrowserRouter.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+para la seccion de votos utilizaria un operador ternario que dependa de un stado boolean, asi podria alternar entre "vote again" y "vote now". despues de esto enviaria los votos al api REST del back y confirmaria con el token cuantos votos ha realizado, si la respuesta es que supero los 3 votos devolveria un error y este lo capturaria seteando una variable en mi rudex state.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+para manejar los porcentajes utilizaria un reducer el cual conectaria al componente cambiaria el width de los divs adicionalmete cambiaria los textos de la misma manera.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
